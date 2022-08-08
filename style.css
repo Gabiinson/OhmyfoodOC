@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", "Shrikhand", "sans-serif";
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/****** HEADER *****/
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding-top: 25px;
+}
+
+.localisation-titre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 0 0 5px #cecece;
+  margin-top: 15px;
+}
+
+.paris-belleville {
+  font-weight: normal;
+  padding-right: 15px;
+}
+
+.fa-location-dot {
+  padding-right: 15px;
+}
+
+/***** BODY *****/
+.titre-acceuil {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.paragraphe-acceuil {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #4d4d4d;
+}
+
+.explorer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.ecriture-btn-explorer {
+  padding: 15px;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 1rem;
+  border: transparent;
+  color: #fff;
+  background-color: #df6fda;
+  box-shadow: 0 5px 5px 0 #c5c5c5;
+}
+
+.ecriture-btn-explorer:hover {
+  background-color: #9356dc;
+}
+
+.color-header {
+  background-color: #f6f6f6;
+  height: 280px;
+}
+
+.fonctionnement {
+  text-align: start;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.bloc-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.btn-acceuil-phrase {
+  border: transparent;
+  background-color: #f6f6f6;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn-acceuil-phrase-bar {
+  padding-right: 20px;
+  border: transparent;
+  background-color: #f6f6f6;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn-acceuil-phrase-store {
+  padding-right: 12px;
+  border: transparent;
+  background-color: #f6f6f6;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn-acceuil-phrase:hover, .btn-acceuil-phrase-bar:hover, .btn-acceuil-phrase-store:hover {
+  background-color: #f5edff;
+}
+
+.btn-acceuil {
+  background-color: #f6f6f6;
+  color: #777;
+  font-size: 1rem;
+  width: 90%;
+  height: 60px;
+  border-radius: 15px;
+  box-shadow: 0 5px #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-acceuil:hover {
+  background-color: #f5edff;
+}
+
+.fa-mobile-screen-button, .fa-bars, .fa-store {
+  padding-right: 20px;
+}
+
+.fa-mobile-screen-button:hover, .fa-bars:hover, .fa-store:hover {
+  color: #9356dc;
+}
+
+.fa-circle-1, .fa-circle-2, .fa-circle-3 {
+  color: #fff;
+  background-color: #9356dc;
+  visibility: visible;
+  font-size: 1rem;
+}
+
+.block-btn-color {
+  margin: 0;
+  color: transparent;
+  font-size: 1.8rem;
+}
+
+.titre-restaurant {
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.new-btn-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: #269e80;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 20%;
+  height: 30px;
+}
+
+.page-acceuil-bloc {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.cards-img-acceuil {
+  width: 85%;
+  height: 260px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1803921569);
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.picture-acceuil {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.sous-titre-cards {
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.coeur {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.fa-heart:hover {
+  background-color: #df6fda;
+}
+
+/***** FOOTER *****/
+.logo-footer {
+  color: #fff;
+  padding: 5px;
+  margin-left: 15px;
+  font-family: "Shrikhand", "sans-serif";
+}
+
+.ohmyfood-footer {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: lighter;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #353535;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.link-footer {
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+}
+
+.fa-handshake-angle, .fa-utensils {
+  padding-right: 5px;
+  border-radius: 15px;
+}
+
+/****** PAGE MENU 2 3 4 5 ******/
+.picture-menu {
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo-menu {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+}
+
+.police-titre-menu {
+  font-family: "Shrikhand", "sans-serif";
+}
+
+.align-logo {
+  display: flex;
+  align-items: center;
+}
+
+.fa-arrow-left {
+  color: black;
+  padding-left: 5px;
+}
+
+.titre-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 20px;
+}
+
+.fa-heart {
+  font-size: 1.5rem;
+  color: #494949;
+}
+
+.background-menu {
+  background-color: #f6f6f6;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  margin-top: -40px;
+}
+
+.entree-titre, .plat-titre, .dessert-titre {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #494949;
+  font-weight: normal;
+  padding-top: 40px;
+  margin-left: 20px;
+  border-bottom: solid 2px #99e2d0;
+}
+
+.plat-card-menu, .entree-card-menu, .dessert-card-menu {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 1.1rem;
+}
+
+.accompagnement-menu {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bloc-accompagnement-prix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btn-card-menu {
+  width: 95%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+  box-shadow: 0 5px 5px 0 #e9e9e9;
+  margin-top: 15px;
+}
+
+.ecriture-btn-menu {
+  padding: 15px;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 1rem;
+  border: transparent;
+  color: #fff;
+  background-color: #df6fda;
+  box-shadow: 0 3px 3px 0 #c5c5c5;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.commande-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .logo {
+    width: 35%;
+  }
+  .block-btn-color {
+    margin: 5px;
+  }
+  .color-header {
+    height: 160px;
+  }
+  .paris-belleville {
+    font-size: 1rem;
+  }
+  .titre-acceuil {
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+  .paragraphe-acceuil {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .ecriture-btn-explorer {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .explorer-btn {
+    padding-top: 15px;
+  }
+  .fonctionnement {
+    padding-top: 0;
+  }
+  .bloc-nav {
+    row-gap: 25px;
+  }
+  .btn-acceuil {
+    width: 50%;
+    height: 40px;
+  }
+  .page-acceuil-bloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .new-btn-green {
+    width: 10%;
+  }
+  .titre-restaurant {
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .cards-img-acceuil {
+    width: 40%;
+    margin: 15px;
+  }
+  .footer-list {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .logo-footer {
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  .logo {
+    width: 35%;
+  }
+  .color-header {
+    height: 160px;
+  }
+  .paris-belleville {
+    font-size: 1rem;
+  }
+  .titre-acceuil {
+    font-size: 1.1rem;
+    padding-top: 10px;
+  }
+  .paragraphe-acceuil {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .ecriture-btn-explorer {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .explorer-btn {
+    padding-top: 15px;
+  }
+  .fonctionnement {
+    padding-top: 5px;
+    font-size: 1.1rem;
+  }
+  .bloc-nav {
+    flex-direction: row;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .btn-acceuil {
+    width: 22%;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  .btn-acceuil-phrase, .btn-acceuil-phrase-bar, .btn-acceuil-phrase-store {
+    font-size: 0.7rem;
+  }
+  .titre-restaurant {
+    padding-top: 20px;
+    font-size: 1.1rem;
+  }
+  .page-acceuil-bloc {
+    flex-direction: row;
+  }
+  .cards-img-acceuil {
+    width: 22%;
+    margin-bottom: 35px;
+  }
+  .cards-title {
+    font-size: 0.9rem;
+  }
+  .sous-titre-cards {
+    font-size: 0.9rem;
+  }
+  .picture-menu {
+    height: 420px;
+  }
+  .fa-heart {
+    font-size: 1.2rem;
+  }
+  .new-btn-green {
+    width: 8%;
+  }
+  footer {
+    height: 150px;
+  }
+  .footer-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .link-footer {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+  .logo-footer {
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: lighter;
+    text-align: center;
+  }
+  /***** MENU ****/
+  .responsive-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .btn-card-menu {
+    width: auto;
+  }
+  .Entree-menu, .Plats-menu, .Desserts-menu {
+    width: 30%;
+  }
+  .entree-card-menu, .plat-card-menu, .dessert-card-menu, .accompagnement-menu {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
