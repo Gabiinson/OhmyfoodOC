@@ -30,7 +30,7 @@ header{
 .logo{
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 45%;
     height: auto;
     padding-top: 25px;
 }
@@ -57,7 +57,7 @@ header{
 
 .titre-acceuil{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0;
     padding-top: 30px;
 }
@@ -83,11 +83,8 @@ header{
     border: transparent;
     color: #fff;
     background-color: $color-secondary;
-    box-shadow: 0 5px 5px 0 #c5c5c5;
-}
-
-.ecriture-btn-explorer:hover{
-    background-color: $color-primary;
+    box-shadow: 0 10px 10px 0 #c5c5c5;
+    background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
 }
 
 .color-header{
@@ -109,6 +106,19 @@ header{
     row-gap: 20px;
 }
 
+.number-btn{
+    color: #fff;
+    background-color: $color-primary;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5%;
+}
+
 .btn-acceuil-phrase{
     border: transparent;
     background-color: $color-back;
@@ -127,7 +137,7 @@ header{
 }
 
 .btn-acceuil-phrase-store{
-    padding-right: 12px;
+    padding-right: 15px;
     border: transparent;
     background-color: $color-back;
     color: #000000;
@@ -157,18 +167,12 @@ header{
 }
 
 .fa-mobile-screen-button, .fa-bars, .fa-store{
-    padding-right: 20px;
+    padding-right: 40px;
+    font-size: 1.1rem;
 }
 
 .fa-mobile-screen-button:hover, .fa-bars:hover, .fa-store:hover{
     color: $color-primary;
-}
-
-.fa-circle-1, .fa-circle-2, .fa-circle-3{
-    color: #fff;
-    background-color: $color-primary;
-    visibility: visible;
-    font-size: 1rem;
 }
 
 .block-btn-color{
@@ -183,7 +187,6 @@ header{
     padding-bottom: 20px;
     margin: 0;
     background-color: #f6f6f6;
-
 }
 
 .new-btn-green{
@@ -193,6 +196,8 @@ header{
     background-color: $color-tertiaire;
     color: #269e80;
     position: absolute;
+    left: 70%;
+    border-radius: 5px;
     margin-top: 10px;
     margin-right: 10px;
     width: 20%;
@@ -304,7 +309,7 @@ footer{
 }
 
 .logo-menu{
-    width: 40%;
+    width: 45%;
     margin: auto;
     padding: 10px;
 }
@@ -435,6 +440,10 @@ footer{
     .fonctionnement{
         padding-top: 0;
     }
+    .number-btn{
+        position: absolute;
+        left: 25%;
+    }
     .bloc-nav{
         row-gap: 25px;
     }
@@ -500,6 +509,9 @@ footer{
     .fonctionnement{
         padding-top: 5px;
         font-size: 1.1rem;
+    }
+    .number-btn{
+        visibility: hidden;
     }
     .bloc-nav{
         flex-direction: row;
