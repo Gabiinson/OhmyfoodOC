@@ -200,7 +200,7 @@ header{
     background-color: $color-tertiaire;
     color: #269e80;
     position: absolute;
-    right: 15px;
+    right: 10px;
     border-radius: 5px;
     margin-top: 10px;
     margin-right: 10px;
@@ -260,11 +260,18 @@ header{
 }
 
 .fa-heart{
+    font-size: 1.5rem;
+    color: #494949;
+}
+
+.fa-heart{
     position: absolute;
     right: 25px;
 }
 
 .fa-heart:hover{
+    transition-property: all;
+    transition-duration: 2s;
     background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
     background-clip: text;
     -webkit-animation-background-clip: text;
@@ -314,7 +321,6 @@ padding-right: 5px;
 
 /****** PAGE MENU 2 3 4 5 ******/
 
-
 .picture-menu{
     height: 250px;
     width: 100%;
@@ -322,17 +328,21 @@ padding-right: 5px;
     cursor: pointer;
     object-fit: cover;
 }
-.Entree-menu{
-    animation-name: entree-animation;
-    animation: 3s both;
+
+.Entree-menu, .titre-menu, .Plats-menu, .Desserts-menu{
+    animation-name: menu-fondu;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
 }
 
-@keyframes entree-animation{
-    from{
-        transform: translateY(200px);
+@keyframes menu-fondu{
+    0%{
+        transform: translateY(250px);
     }
-    to{
-        transform: translateY(0);
+    100%{
+        transform: translateY(0px);
     }
 }
 
@@ -364,11 +374,6 @@ padding-right: 5px;
     padding-left: 20px;
 }
 
-.fa-heart{
-    font-size: 1.5rem;
-    color: #494949;
-}
-
 .background-menu{
     background-color: $color-back;
     height: 100%;
@@ -378,26 +383,43 @@ padding-right: 5px;
     margin-top: -40px;
 }
 
+.btn-card-menu{
+    width: 95%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 5px 5px 0 #e9e9e9;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
 .menu-animation{
     color: #fff;
     background-color: $color-tertiaire;
     height: 100%;
-    width: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
     font-size: 1.3em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 17px 17px 0;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
-.menu-animation:active .fa-check{
-    transform: translateX(0);
+.menu-animation:hover .fa-check{
+    transform: rotate(180deg);
+    margin-right: -1rem;
 }
+
+.menu-animation:hover.fa-check{
+    transform: rotate(0deg);
+}
+
 .fa-check{
-    font-size: 13px;
+    width: 1.6rem;
+    height: 1.6rem;
     color: #99E2D0;
     background: white;
     border-radius: 50px;
@@ -420,22 +442,17 @@ padding-right: 5px;
     width: 100px;
     height: 3px;
     position: absolute;
-    left: 3%;
-    top: 140px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    left: 20px;
+    top: 65px;
 }
-
 .plat-titre:after{
     content: "";
     background: $color-tertiaire;
     width: 100px;
     height: 3px;
     position: absolute;
-    left: 3%;
-    top: 455px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    left: 20px;
+    top: 65px;
 }
 
 .dessert-titre::after{
@@ -444,10 +461,8 @@ padding-right: 5px;
     width: 100px;
     height: 3px;
     position: absolute;
-    left: 4%;
-    bottom: 425px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    left: 20px;
+    bottom: 250px;
 }
 
 .plat-card-menu, .entree-card-menu, .dessert-card-menu{
@@ -466,16 +481,6 @@ padding-right: 5px;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-}
-
-.btn-card-menu{
-    width: 95%;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 15px;
-    margin: auto;
-    box-shadow: 0 5px 5px 0 #e9e9e9;
-    margin-top: 15px;
 }
 
 .ecriture-btn-menu{
@@ -620,8 +625,8 @@ padding-right: 5px;
         width: 100px;
         height: 3px;
         position: absolute;
-        left: 4%;
-        top: 138px;
+        left: 20px;
+        top: 65px;
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
@@ -631,8 +636,8 @@ padding-right: 5px;
         width: 95px;
         height: 3px;
         position: absolute;
-        left: 36.5%;
-        top: 138px;
+        left: 20px;
+        top: 65px;
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
@@ -642,8 +647,8 @@ padding-right: 5px;
         width: 100px;
         height: 3px;
         position: absolute;
-        left: 69%;
-        top: 138px;
+        left: 20px;
+        top: 65px;
         -webkit-transition: 0.3s;
         transition: 0.3s;
     }
