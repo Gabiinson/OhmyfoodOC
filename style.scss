@@ -264,18 +264,20 @@ header{
     color: #494949;
 }
 
-.fa-heart{
+.full-heart{
     position: absolute;
     right: 25px;
+    opacity: 0;
+    transition-duration: 1s;    
+    transition-property: all;
+    background-clip: text;
+    -webkit-animation-background-clip: text;
+    background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
 }
 
 .fa-heart:hover{
-    transition-property: all;
-    transition-duration: 2s;
-    background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
-    background-clip: text;
-    -webkit-animation-background-clip: text;
-    
+    opacity: 1;
+    color: $color-secondary;
 }
 
 /***** FOOTER *****/
