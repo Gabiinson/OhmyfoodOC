@@ -19,7 +19,7 @@ body{
 }
 
 .fa-circle-notch{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: $color-secondary;
 }
 .container-loader{
@@ -34,8 +34,8 @@ body{
     opacity: 0.8;
     transform-origin: top;
     animation-name: spin-loader;
-    animation-duration: 0.3s;
-    animation-delay: 3s;
+    animation-duration: 0.2s;
+    animation-delay: 3.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;  
 }
@@ -286,7 +286,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 25px;
+    padding-right: 20px;
     position: relative;
 }
 
@@ -297,7 +297,7 @@ header{
 
 .full-heart{
     position: absolute;
-    right: 25px;
+    right: 20px;
     opacity: 0;
     transition-duration: 1s;    
     transition-property: all;
@@ -425,33 +425,45 @@ padding-right: 5px;
     box-shadow: 0 5px 5px 0 #e9e9e9;
     margin-top: 15px;
     overflow: hidden;
+    position: relative;
+    animation-fill-mode: both;
+    z-index: 0;
+}
+
+.menu-card-content{
+    width: 100%;
+    transition: 0.8s ease-in-out;
+    text-overflow: ellipsis;
+}
+
+.btn-card-menu:hover strong{
+    margin-right: 80px;
 }
 
 .menu-animation{
     color: #fff;
     background-color: $color-tertiaire;
-    height: 100%;
-    width: 4rem;
-    margin: -1rem -5rem -1rem 1rem;
+    height: 85px;
+    width: 80px;
+    position: absolute;
+    right: -100px;
+    bottom: -9px;
     font-size: 1.3em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 17px 17px 0;
+    border-radius: 0 20px 20px 0;
     transition-duration: 0.5s;
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
 }
 
-.menu-animation:hover .fa-check{
-    transform: rotate(180deg);
-    margin-right: -1rem;
-}
-
-.menu-animation:hover.fa-check{
-    transform: rotate(0deg);
+.btn-card-menu:hover .menu-animation{
+    right: 0;
+    transform: rotate(360deg);
 }
 
 .fa-check{
-    width: 1.6rem;
     height: 1.6rem;
     color: #99E2D0;
     background: white;
@@ -478,6 +490,7 @@ padding-right: 5px;
     left: 20px;
     top: 65px;
 }
+
 .plat-titre:after{
     content: "";
     background: $color-tertiaire;
@@ -502,11 +515,15 @@ padding-right: 5px;
     margin: 0;
     padding-left: 5px;
     font-size: 1.1rem;
+    text-overflow: ellipsis;
 }
 
 .accompagnement-menu{
     margin: 0;
     font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .bloc-accompagnement-prix{
