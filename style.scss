@@ -109,7 +109,8 @@ header{
 .explorer-btn:hover{
     transform: scale(1);
     transition: 0.3s;
-    opacity: 0.6;
+    opacity: 0.8;
+
 }
 
 .ecriture-btn-explorer{
@@ -257,6 +258,7 @@ header{
     position: relative;
 }
 
+
 .picture-acceuil{
     width: 100%;
     height: 75%;
@@ -286,7 +288,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
+    padding-right: 25px;
     position: relative;
 }
 
@@ -297,7 +299,7 @@ header{
 
 .full-heart{
     position: absolute;
-    right: 20px;
+    right: 25px;
     opacity: 0;
     transition-duration: 1s;    
     transition-property: all;
@@ -362,9 +364,33 @@ padding-right: 5px;
     object-fit: cover;
 }
 
-.Entree-menu, .titre-menu, .Plats-menu, .Desserts-menu{
+.titre-menu{
     animation-name: menu-fondu;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform: scale(0);
+}
+.Entree-menu{
+    animation-name: menu-fondu;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+}
+.Plats-menu{
+    animation-name: menu-fondu;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+}
+.Desserts-menu{
+    animation-name: menu-fondu;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(0);
@@ -372,7 +398,7 @@ padding-right: 5px;
 
 @keyframes menu-fondu{
     0%{
-        transform: translateY(250px);
+        transform: translateY(370px);
     }
     100%{
         transform: translateY(0px);
@@ -540,7 +566,7 @@ padding-right: 5px;
     border: transparent;
     color: #fff;
     background-color: $color-secondary;
-    box-shadow: 0 3px 3px 0 #c5c5c5;
+    box-shadow: 0 5px 5px 0 #c5c5c5;
     padding-right: 50px;
     padding-left: 50px;
     background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
@@ -557,7 +583,7 @@ padding-right: 5px;
 .commande-btn:hover{
     transform: scale(1);
     transition: transform 200ms;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) {
@@ -667,7 +693,7 @@ padding-right: 5px;
         column-gap: 25px;
     }
     .btn-card-menu{
-        min-width: 335px;
+        min-width: 325px;
     }
     .entree-titre:after{
         content: "";
@@ -731,7 +757,7 @@ padding-right: 5px;
         height: 420px;
     }
     .fa-heart{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     footer{
         height: 150px;
@@ -764,10 +790,10 @@ padding-right: 5px;
     }
     .Entree-menu, .Plats-menu, .Desserts-menu{
         width: 30%;
+        margin-right: 25px;
     }
-
-.entree-card-menu, .plat-card-menu, .dessert-card-menu, .accompagnement-menu{
-    font-size: 1rem;
+    .entree-card-menu, .plat-card-menu, .dessert-card-menu, .accompagnement-menu{
+        font-size: 1rem;
 }
 
 }

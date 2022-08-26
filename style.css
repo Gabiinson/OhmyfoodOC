@@ -119,7 +119,7 @@ header {
 .explorer-btn:hover {
   transform: scale(1);
   transition: 0.3s;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .ecriture-btn-explorer {
@@ -299,7 +299,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 20px;
+  padding-right: 25px;
   position: relative;
 }
 
@@ -310,7 +310,7 @@ header {
 
 .full-heart {
   position: absolute;
-  right: 20px;
+  right: 25px;
   opacity: 0;
   transition-duration: 1s;
   transition-property: all;
@@ -375,11 +375,53 @@ footer {
      object-fit: cover;
 }
 
-.Entree-menu, .titre-menu, .Plats-menu, .Desserts-menu {
+.titre-menu {
   -webkit-animation-name: menu-fondu;
           animation-name: menu-fondu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
+}
+
+.Entree-menu {
+  -webkit-animation-name: menu-fondu;
+          animation-name: menu-fondu;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
+}
+
+.Plats-menu {
+  -webkit-animation-name: menu-fondu;
+          animation-name: menu-fondu;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: scale(0);
+}
+
+.Desserts-menu {
+  -webkit-animation-name: menu-fondu;
+          animation-name: menu-fondu;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
           animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   -webkit-animation-fill-mode: both;
@@ -389,7 +431,7 @@ footer {
 
 @-webkit-keyframes menu-fondu {
   0% {
-    transform: translateY(250px);
+    transform: translateY(370px);
   }
   100% {
     transform: translateY(0px);
@@ -398,7 +440,7 @@ footer {
 
 @keyframes menu-fondu {
   0% {
-    transform: translateY(250px);
+    transform: translateY(370px);
   }
   100% {
     transform: translateY(0px);
@@ -566,7 +608,7 @@ footer {
   border: transparent;
   color: #fff;
   background-color: #df6fda;
-  box-shadow: 0 3px 3px 0 #c5c5c5;
+  box-shadow: 0 5px 5px 0 #c5c5c5;
   padding-right: 50px;
   padding-left: 50px;
   background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC);
@@ -584,7 +626,7 @@ footer {
 .commande-btn:hover {
   transform: scale(1);
   transition: transform 200ms;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -692,7 +734,7 @@ footer {
          column-gap: 25px;
   }
   .btn-card-menu {
-    min-width: 335px;
+    min-width: 325px;
   }
   .entree-titre:after {
     content: "";
@@ -753,7 +795,7 @@ footer {
     height: 420px;
   }
   .fa-heart {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   footer {
     height: 150px;
@@ -784,6 +826,7 @@ footer {
   }
   .Entree-menu, .Plats-menu, .Desserts-menu {
     width: 30%;
+    margin-right: 25px;
   }
   .entree-card-menu, .plat-card-menu, .dessert-card-menu, .accompagnement-menu {
     font-size: 1rem;
